@@ -1,0 +1,110 @@
+@media (max-width: 768px){
+  h1 { font-size: 40px;         line-height: 46px;}
+  h2 { font-size: 30px;        line-height: 46px; }
+  h3 { font-size: 22px; }
+  p  { font-size: 16px; }
+}
+
+@media (max-width: 480px){
+  h1 { font-size: 32px;         line-height: 46px;}
+  h2 { font-size: 24px;        line-height: 46px; }
+  h3 { font-size: 20px; }
+  p  { font-size: 15px; }
+}
+
+
+/* ===================== */
+/* 📱 MOBILE RESPONSIVE */
+/* ===================== */
+@media (max-width: 768px){
+
+  .nav1{
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background: white;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+    display: none;
+  }
+
+  .nav1.active{
+    display: flex;
+  }
+
+  .btn-wrap{
+    display: none;
+  }
+
+  .hamburger{
+    display: block;
+  }
+}
+
+/* ================banner======= */
+
+@media (max-width: 900px){
+  .main.innerban{
+    flex-direction: column;
+    text-align: center;
+            margin-top: 46px;
+  }
+.about {
+            display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+}
+  .image-1{
+    justify-content: center;
+            margin-top: 36px;
+  }
+
+  .image-1 img{
+    max-width: 100%;
+  }
+}
+
+/* ==================sec================= */
+
+
+
+
+/* ==================logoipsum===================== */
+
+/* Tablet */
+@media (max-width: 992px){
+  .-logoipsum{
+    flex: 1 1 45%;   /* 2 per row */
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px){
+  .-logoipsum{
+    flex: 1 1 100%;  /* 1 per row */
+  }
+}
+
+/* =============logoipsum end================= */
+
+
+
+/* ==========about============= */
+
+/* Tablet */
+@media (max-width: 992px){
+  .inner-section{
+    flex: 1 1 45%;   /* 2 per row */
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px){
+  .inner-section{
+    flex: 1 1 100%;  /* 1 per row */
+  }
+}

@@ -1,0 +1,647 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+html,body{
+   /* height: 100%; */
+   width: 100%; 
+   background-color: white;
+   margin: auto; 
+   font-family: 'Poppins', Arial, sans-serif;}
+
+   
+h1 {
+    font-size: 70px;
+    line-height: 80px;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+h4{
+    font-size: 25px;
+    margin-bottom: 12px;
+}
+
+p{
+   color: grey;
+}
+
+/* img {
+    width: 100%;
+    height: 20%;
+} */
+
+   /* =======================Header Start======================== */
+
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 30px;
+}
+
+.logo img{
+  width: 140px;
+}
+
+/* Desktop menu */
+.nav1{
+  display: flex;
+  gap: 30px;
+}
+
+.nav1 a{
+  font-size: 18px;
+  font-weight: 500;
+  color: black;
+  text-decoration: none;
+}
+
+/* Button stays same */
+button{
+  border: 2px solid #5d56f1;
+  padding: 15px 20px;
+  border-radius: 100px;
+  background-color: #5d56f1;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Hamburger hidden on desktop */
+.hamburger{
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+button {
+  border: 2px solid #5d56f1;
+  padding: 15px 15px 15px 20px;
+  border-radius: 100px;
+  background-color: #5d56f1;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+    align-content: center;
+    align-items: center;
+  transition: 0.3s ease-in-out;
+}
+
+/* sliding background */
+button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: white;
+  z-index: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.image-1{
+    /* width: 40%; */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.image-1 img{
+       width: 80%;
+    border-radius: 40px;
+}
+
+/* keep text above background */
+button span {
+  position: relative;
+  z-index: 1;
+  transition: 0.3s ease-in-out;
+}
+
+/* ✅ text color change on hover */
+button:hover span {
+  color: #5d56f1;
+}
+
+/* background slide */
+button:hover::before {
+  left: 0;
+}
+
+.material-symbols-outlined{
+   color: white;
+}
+.material-symbols-outlined:hover{
+   color: black;
+}
+
+/* ================Header end================ */
+
+
+.main.innerban {
+  background-image: url("images/hero-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  margin-top: 69px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+     padding-bottom: 40px;
+}
+
+.section-1 p{
+   margin-top: 40px;
+   margin-bottom: 40px;
+  
+}
+
+.section-1 h3{
+   margin-bottom: 10px;
+
+}
+.section-1{
+   
+   flex: 1;
+}
+.image-1{
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* .about{
+   width: 80%;
+} */
+
+.banner{
+   background-color: #F7F8FD;
+   padding-bottom: 100px;
+}
+
+.banner-2{
+   background-color: #F7F8FD;
+}
+
+
+
+.innerban{
+   width:85%;
+   margin: auto;
+}
+.nav1 a:hover{
+    color: #5d56f1;
+}
+
+/* <!-- ======================About Company start========================== */
+
+
+.section-2{
+   margin-top: 40px;
+}
+.inner-section {
+    display: flex;
+    align-items: flex-start;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    align-items: center;
+    margin-top: 40px;
+    width: 100%;
+}
+.paragraph {
+    width: 48%; 
+    flex: 1;
+}
+
+.image-2{
+     width: 47%; 
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.image-2 img{
+    width: 100%;
+    border-radius: 40px;
+    object-fit: cover;
+}
+.main-list {
+        display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    padding-top: 40px;
+    line-height: 50px;
+    gap: 62px;
+}
+.main-list ul{
+   font-size: 18px;
+   font-weight: 500;
+} 
+
+.about-button{
+   padding-top: 30px;
+}
+
+.list1 ul{
+   list-style: none;
+}
+.list2 ul{
+   list-style: none;
+}
+.fa-play-circle{
+   color: #5d56f1;
+}
+
+/* =============About Company End======================= */
+
+/* =================services============================== */
+
+.section-3{
+   padding-top: 100px;
+   
+   padding-bottom: 100px;
+}
+
+.outer-services{
+   display: flex;
+   justify-content: space-between;
+}
+.service-btn {
+    padding-top: 70px;
+}
+
+
+
+/* =================cards=============== */
+.heading{
+   display: flex;
+   justify-content: space-between;
+
+}
+.icon img {
+    padding: 13px;
+    background-color: #5d56f1;
+    border-radius: 30px;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+}
+.icon img:hover {
+  transform: scale(1.08) rotate(45deg);
+}
+.inner-content{
+   padding-top: 20px;
+  }
+.inner-content img {
+    width: 100%; 
+   border-radius: 40px;
+   padding-top: 15px;
+   transition: all 0.5s ease-out;
+}
+.inner-content img:hover {
+  transform: scale(1.08);
+}
+.card-1 {
+    padding: 27px;
+    display: flex;
+    background-color: white;
+    border-radius: 40px;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-content: center;
+    flex: 1 1 300px;
+
+
+}
+
+.cards {
+   padding-top: 50px;
+    gap: 30px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    
+}
+
+.main-1 {
+  padding-top: 50px;
+  gap: 30px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; 
+}
+.sec2{
+background-color: #F7F8FD;
+padding-bottom: 85px;
+
+}
+/* =======================our works=================== */
+
+
+
+.inner-content-1{
+   background-color: #F7F8FD;
+   border-radius: 20px;
+   padding: 27px;
+    display: flex;
+    border-radius: 40px;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-content: center;
+    flex: 1 1 300px;
+}
+    
+
+.pic{
+   border-radius: 0px;
+   overflow: hidden;
+}
+
+.inner-content-1 img {
+    width: 100%; 
+   border-radius: 40px;
+   padding-top: 15px;
+   transition: all 0.5s ease-out;
+}
+.inner-content-1 img:hover {
+  transform: scale(1.08);
+}
+.cards-2 {
+   padding-top: 50px;
+    gap: 30px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    
+}
+.para{
+   padding-top: 40px;
+}
+.para p{
+   padding-top: 20px;
+}
+
+
+
+/* =================Choose Us=============== */
+
+.innovation {
+    padding: 10px 10px;
+    background-color: white;
+    border-radius: 10%;
+    overflow: hidden;
+}
+.innovation img{
+   padding-bottom: 15px;
+}
+
+.explore{
+   padding-top: 50px;
+
+}
+
+.innovation h3{
+   padding-bottom: 10px;
+}
+
+.main-inner{
+   display: flex;
+   justify-content: space-between;
+   margin-left: 60px;
+   margin-top: 60px;
+}
+
+.inner-explore p {
+   margin-top: 50px;
+   margin-left: 60px;
+}
+
+.buttons{
+
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-left: 50px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+.explore-para{
+   display: flex;
+    flex-wrap: wrap; 
+   justify-content: space-between;
+
+}
+
+
+.inner-services{
+   margin-bottom: 35px;
+}
+
+
+
+
+
+
+/* ===============logoipsum start================ */
+
+
+
+
+
+.partners-ipsum{
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* each row */
+.-logoipsum-icon{
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;   /* IMPORTANT */
+}
+
+/* each card */
+.-logoipsum{
+  flex: 1 1 22%;     /* 4 items per row */
+  background: #f7f8fd;
+  border-radius: 20px;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logoipsum-icons img{
+  max-width: 140px;
+}
+
+
+
+
+
+
+
+
+/* =======================logoipsum end================= */
+
+
+
+
+/* ===================cards-5========================= */
+
+.slider-wrapper-2 {
+       padding-bottom: 100px;
+     position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+
+.main-2 {
+  display: flex;
+  gap: 30px;
+  flex-wrap: nowrap;               
+  transition: transform 0.5s ease-in-out;
+}
+
+.card-5 {
+  min-width: 350px;   
+  padding: 27px;
+  background-color: white;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.slider {
+  display: flex;
+  padding: 15px;
+  align-items: center;
+}
+
+.slider-images img {
+  width: 70px;
+  border-radius: 50%;
+}
+
+.slider-main {
+  padding-left: 20px;
+}
+
+
+/* =================about section=========== */
+
+.footer{
+   padding-top: 80px;
+}
+
+.about-section{
+   display: flex;
+    justify-content: space-between;
+    gap: 45px;
+    flex-wrap: wrap;
+
+}
+.pages{
+   padding-top: 20px;
+}
+
+.pages ul{
+   list-style: none;
+}
+.pages a{
+   text-decoration: none;
+}
+
+.footer-main{
+       display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.privacy ul{
+   display: flex;
+   justify-content: space-evenly;
+   gap: 50px;
+   list-style: none;
+}
+.copyright{
+   display: flex;
+   justify-content: space-between;
+   padding-top: 20px;
+
+}
+
+
+/* =====================about-section============= */
+
+@media (max-width: 576px){
+
+  .section-2.innerban{
+    width: 90%;
+  }
+
+  .about-company h1{
+    font-size: 28px;
+  }
+
+  .main-list{
+    flex-direction: column;
+  }
+
+  .main-list li{
+    font-size: 15px;
+  }
+
+  .about-button{
+    text-align: center;
+  }
+}
+
+
+
+@media (max-width: 992px){
+  .inner-section{
+    flex-direction: column;
+  }
+
+  .image-2 img{
+    max-height: 400px;
+  }
+
+  .main-list{
+    gap: 20px;
+  }
+}
